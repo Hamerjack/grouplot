@@ -1,0 +1,126 @@
+extends layout
+
+include ./navbar.pug
+include ./includeSections/lotteryList.pug
+
+block navbar
+    +navbar("Lotteries")
+block content
+    .container
+        h1.p-spacer= title
+        h5
+            | WE PLAY LOTTERY AS A TEAM TO INCREASE OUR CHANCES OF WINNING 
+        p
+            | *Each lottery organization has its unique Terms and Conditions. All members are expected to read the rules-regulations, terms-conditions, and privacy-policy of each lottery we partake in. You can call the 1800 number or check online about winning numbers Captain will email each group about the winnings at the end of the lottery Remember you are only the member of the group you choose to play not all groups As some lottery may have more groups in the same lottery  
+    .container.marketing
+        .row.featurette
+            .col-md-7
+                h2.featurette-heading
+                    | Lotto 6/49 
+                    //- span.text-muted It&apos;ll blow your mind.
+                p.lead
+                    | Each play costs $3 and includes one set of numbers from 1 to 49 for the Main Jackpot Draw and a second, 10-digit set of numbers for the $1-million GUARANTEED PRIZE DRAW.
+                p.lead
+                    | Contact - 1-800-234-2344
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/649.png' alt='Lotto 649')
+        hr.featurette-divider
+        .row.featurette
+            .col-md-7.order-md-2
+                h2.featurette-heading
+                    | Lotto Max
+                    //- span.text-muted See for yourself.
+                p.lead
+                    | LOTTO MAX draws are twice a week – on Tuesdays and Fridays! It’s easy and fun to play LOTTO MAX! You get three sets of numbers per $5 play. Each set consists of seven numbers from 1 to 50.
+                P.lead
+                    | Contact - 1-800-234-2344
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5.order-md-1
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/max.png' alt='Lotto Max')
+        hr.featurette-divider
+        .row.featurette
+            .col-md-7
+                h2.featurette-heading
+                    | Canadian Cancer Society 
+                    //- span.text-muted It&apos;ll blow your mind.
+                p.lead
+                    | Ontario’s Biggest Cash and Cars Lottery: Your Best Chance to Win BIG!
+                p.lead
+                    | Contact - 1-866-727-2025
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/ccs.png' alt='Canadian Cancer Society')
+        hr.featurette-divider
+        .row.featurette
+            .col-md-7.order-md-2
+                h2.featurette-heading
+                    | Heart and Stroke Foundation
+                    //- span.text-muted See for yourself.
+                p.lead
+                    | LOTTO MAX draws are twice a week – on Tuesdays and Fridays! It’s easy and fun to play LOTTO MAX! You get three sets of numbers per $5 play. Each set consists of seven numbers from 1 to 50.
+                p.lead
+                    | Contact - 1-844-512-1044
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5.order-md-1
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/hns.png' alt='Heart and Stroke Foundation')
+        hr.featurette-divider
+        .row.featurette
+            .col-md-7
+                h2.featurette-heading
+                    | Princess Margaret 
+                    //- span.text-muted It&apos;ll blow your mind.
+                p.lead
+                    | Ontario’s Biggest Cash & Cars Lottery: Your Best Chance to Win BIG!
+                p.lead
+                    | Contact - 1-800-542-8813
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/hl.png' alt='Princess Margaret')
+        hr.featurette-divider
+        .row.featurette
+            .col-md-7.order-md-2
+                h2.featurette-heading
+                    | Rotary
+                    //- span.text-muted See for yourself.
+                p.lead
+                    | LOTTO MAX draws are twice a week – on Tuesdays and Fridays! It’s easy and fun to play LOTTO MAX! You get three sets of numbers per $5 play. Each set consists of seven numbers from 1 to 50.
+                p.lead
+                    | Contact - 1-519-743-2997
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5.order-md-1
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/rotary.png' alt='Rotary')
+        hr.featurette-divider
+        .row.featurette
+            .col-md-7
+                h2.featurette-heading
+                    | Sick Kids 
+                    //- span.text-muted It&apos;ll blow your mind.
+                p.lead
+                    | Ontario’s Biggest Cash & Cars Lottery: Your Best Chance to Win BIG!
+                p.lead
+                    | Contact - 1-877-216-2598
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/skl.png' alt='Sick Kids')
+        hr.featurette-divider
+        .row.featurette
+            .col-md-7.order-md-2
+                h2.featurette-heading
+                    | Ultimate Dream Home Lottery
+                    //- span.text-muted See for yourself.
+                p.lead
+                    | LOTTO MAX draws are twice a week – on Tuesdays and Fridays! It’s easy and fun to play LOTTO MAX! You get three sets of numbers per $5 play. Each set consists of seven numbers from 1 to 50.
+                p.lead  
+                    | Contact 1-866-319-9818
+                p
+                    a.btn.btn-lg.btn-primary(href='https://lottery.olg.ca/en-ca/winning-numbers/lotto-max/winning-numbers' target='_blank'  role='button') Learn more 
+            .col-md-5.order-md-1
+                img.featurette-image.img-fluid.mx-auto(src='../assets/images/lottery/udh.png' alt='Ultimate Dream Home Lottery')

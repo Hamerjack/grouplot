@@ -1,0 +1,33 @@
+extends layout
+
+include ./navbar.pug
+
+block navbar
+    +navbar("FAQ")
+block content
+    .container
+        h1.p-spacer= title
+        each faq, index in faqs
+            //- -console.log(index)
+            h4 #{faq.header}
+            hr
+            #accordion.p-spacer
+                each questionAnswer, index in faq.questionAnswers
+                    - cardCounter = cardCounter + 1;
+                    .card.m-spacer
+                        div(id=`heading${cardCounter}`, class="card-header")
+                            h5.mb-0
+                                button(class=`${cardCounter === 1 ? "btn btn-link" : "btn btn-link collapsed"}`, data-toggle=`collapse`, data-target=`#collapse${cardCounter}`, aria-expanded=`${cardCounter === 1 ? "true" : "false"}`, aria-controls=`collapse${cardCounter}`)
+                                    | #{questionAnswer.question}
+                        div(id=`collapse${cardCounter}`, class= `${cardCounter === 1 ? "collapse show" : "collapse"}`, aria-labelledby=`heading${cardCounter}`, data-parent=`#accordion`)
+                            .card-body
+                                ul
+                                    each answer in questionAnswer.answers
+                                        if faq.header == "Charity" && answer.oneTab
+                                            h5.m-spacer #{answer.oneTab}
+                                            |
+                                            ul
+                                                each tab in answer.twoTab
+                                                    li #{tab}
+                                        else
+                                            li #{answer}

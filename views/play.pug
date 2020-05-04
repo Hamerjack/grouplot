@@ -1,0 +1,22 @@
+extends layout
+
+include ./navbar.pug
+
+block navbar
+    +navbar("Lets Play")
+block content
+    .container
+        h1.p-spacer= title
+        hr.clearfix.w-100
+        p
+            | Please read Terms and Conditions, F.A.Q., privacy policy before you buy a Ticket
+        ul 
+            li You are only a member of a group you have paid for some lottery may have more groups check your group
+            li Check your lucky numbers personnel information once you receive your ticket any issue let us know in a week time.
+            li Package is one per person that includes 1 main lottery, plus smallest pack of 50/50 plus smallest pack of calendar or any lottery
+    form#form1(method="post" action="/review")
+        .row.p-spacer
+            .col-lg-8.col-md-4.col-sm-12.p-spacer
+                include ./includeSections/registrationLotteryList.pug
+            .col-lg-4.col-md-8.col-sm-8.p-spacer
+                include ./includeSections/paymentSection.pug

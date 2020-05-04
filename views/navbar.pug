@@ -1,0 +1,15 @@
+mixin navbar(activePage)
+    -var navigations = [{pageName : "Lotteries", pageURL : "/lotteries"}, {pageName : "Lets Play", pageURL : "/play"}, {pageName : "Registration", pageURL : "/registration"}, {pageName : "Login", pageURL : "/login"}]
+    nav.navbar.navbar-expand-lg.navbar-dark.sticky-top
+        a.navbar-brand(href='/') Lets Play Group Lottery
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            div.mr-auto
+            ul.navbar-nav
+                for nav in navigations
+                    li(class=(activePage === nav.pageName ? "active nav-item" : "nav-item"))
+                        if (nav.pageName === "Lets Play")
+                            a.nav-link(href=nav.pageURL, class="nav-item", data-target='#exampleModalCenter') !{nav.pageName}
+                        else
+                            a.nav-link(href=nav.pageURL) !{nav.pageName}

@@ -1,0 +1,104 @@
+script(src='/js/index.js')
+
+.card
+    .card-header.text-center
+        | Select Lottery type
+    .card-body
+        .row.border.m-2.rounded
+            .col-sm-2.border-right.p-3
+                input.m-2#exampleCheck1.form-check-input(type="checkbox" name="lotto649" onchange="handleChange(this)")
+            .col-sm-3.border-right.p-3
+                img.w-100(src="../assets/images/logo/649.png")
+            .col-sm-7.text-center.p-3
+                p Lotto 649
+                small.form-text.text-muted $174
+                small.form-text.text-muted Encore included
+                input#noCheck(type='radio' name='yesno' onclick="javascript:yesnoCheck(),document.getElementById('demo').innerHTML = getRndNum(0,49)")
+                |  Quick Pick  
+                // h3#demo  (Create rendom numbers) 
+                input#yesCheck(type='radio' onclick='javascript:yesnoCheck();' name='yesno')
+                |  Choose Numbers  
+                br
+                #ifYes(style='visibility:hidden') 
+                    input#yes(type='text' name='qp1' class='qp' maxlength='2') 
+                    input#yes(type='text' name='qp2' class='qp' maxlength='2')
+                    input#yes(type='text' name='qp3' class='qp' maxlength='2')
+                    input#yes(type='text' name='qp4' class='qp' maxlength='2')
+                    input#yes(type='text' name='qp5' class='qp' maxlength='2')
+                    input#yes(type='text' name='qp6' class='qp' maxlength='2')
+                
+        //- .row.m-2#group649
+        .row.border.m-2.rounded
+            .col-sm-2.border-right.p-3
+                input.m-2#exampleCheck1.form-check-input(type="checkbox" name="max" onchange="handleChange(this)")
+            .col-sm-3.border-right.p-3
+                img.w-100(src="../assets/images/logo/max.png")
+            .col-sm-7.text-center.p-3
+                p Lotto Max
+                small.form-text.text-muted $174
+                small.form-text.text-muted Encore included
+                input#lnoCheck(type='radio' onclick="javascript:lyesnoCheck(),document.getElementById('demo1').innerHTML = getRndNum(0,50)" name='lyesno')
+                |  Quick Pick   
+                //h4#demo1  (Create rendom numbers)                  
+                input#lyesCheck(type='radio' onclick='javascript:lyesnoCheck();' name='lyesno')
+                |  Choose Numbers  
+                br
+                #lifYes(style='visibility:hidden') 
+                    input#lyes(type='text' name='lqp1' class='lqp' maxlength='2') 
+                    input#lyes(type='text' name='lqp2' class='lqp' maxlength='2')
+                    input#lyes(type='text' name='lqp3' class='lqp' maxlength='2')
+                    input#lyes(type='text' name='lqp4' class='lqp' maxlength='2')
+                    input#lyes(type='text' name='lqp5' class='lqp' maxlength='2')
+                    input#lyes(type='text' name='lqp6' class='lqp' maxlength='2')
+                
+            .col#groupMax
+        .row.border.m-2.rounded
+            .col-sm-2.border-right.p-3
+                input.m-2#exampleCheck1.form-check-input(type="checkbox" name="ccs" onchange="handleChange(this)")
+            .col-sm-3.border-right.p-3
+                img.w-100(src="../assets/images/logo/ccs.png")
+            .col-sm-7.text-center.p-3
+                p Canadian Cancer Society
+                small.form-text.text-muted $174
+                small.form-text.text-muted Package Per Person
+            .col#groupccs
+        .row.border.m-2.rounded
+            .col-sm-2.border-right.p-3
+                input.m-2#exampleCheck1.form-check-input(type="checkbox" name="hsf" onchange="handleChange(this)")
+            .col-sm-3.border-right.p-3
+                img.w-100(src="../assets/images/logo/hsf.jpg")
+            .col-sm-7.text-center.p-3
+                p Heart and Stroke Lottery
+                small.form-text.text-muted $174
+                small.form-text.text-muted Package Per Person
+            .col#grouphsf
+        .row.border.m-2.rounded
+            .col-sm-2.border-right.p-3
+                input.m-2#exampleCheck1.form-check-input(type="checkbox" name="pmhl" onchange="handleChange(this)")
+            .col-sm-3.border-right.p-3
+                img.w-100.bg-dark(src="../assets/images/logo/pmhl.png")
+            .col-sm-7.text-center.p-3
+                p Princess Margaret Home Lottery
+                small.form-text.text-muted $174
+                small.form-text.text-muted Package Per Person
+            .col#grouppmhl
+        .row.border.m-2.rounded
+            .col-sm-2.border-right.p-3
+                input.m-2#exampleCheck1.form-check-input(type="checkbox" name="rmbs" onchange="handleChange(this)")
+            .col-sm-3.border-right.p-3
+                img.w-100(src="../assets/images/logo/rmbs.png")
+            .col-sm-7.text-center.p-3
+                p Rotary Dream Home Lottery
+                small.form-text.text-muted $174
+                small.form-text.text-muted Package Per Person
+            .col#grouprmbs
+        .row.border.m-2.rounded
+            .col-sm-2.border-right.p-3
+                input.m-2#exampleCheck1.form-check-input(type="checkbox" name="sickkids" onchange="handleChange(this)")
+            .col-sm-3.border-right.p-3
+                img.w-100(src="../assets/images/logo/sickKids.png")
+            .col-sm-7.text-center.p-3
+                p Sick Kids
+                small.form-text.text-muted $174
+                small.form-text.text-muted Package Per Person
+            .col#groupSickKids

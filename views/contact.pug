@@ -1,0 +1,11 @@
+extends layout
+
+include ./navbar.pug
+include ./includeSections/contactForm.pug
+
+block navbar
+    +navbar("Contact Us")
+block content
+    .container-fluid.bg-white
+        .container
+            +contactForm()

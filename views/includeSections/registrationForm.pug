@@ -1,0 +1,58 @@
+.card
+    .card-header.text-center
+        | User Registration
+    .card-body
+        form(method='post')
+            .form-group
+                label(for='exampleInputEmail1') Email address
+                input#exampleInputEmail1.form-control(type='email', , name='email', aria-describedby='emailHelp', placeholder='Enter email')
+                small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+            .form-group
+                label(for='firstName') First Name
+                input#firstName.form-control(type='text', name='firstName', placeholder='First Name')
+            .form-group
+                label(for='lastName') Last Name
+                input#lastName.form-control(type='text', name='lastName' , placeholder='Last Name')
+            .form-group
+                label(for='password') Password
+                input#password.form-control(type='text', name='password', placeholder='Password')
+            .form-group
+                label(for='profession') Profession
+                input#profession.form-control(type='text', name='profession', aria-describedby='profession', placeholder='Enter Profession')
+            .form-group
+                label(for='telephone') Telephone
+                input#telephone.form-control(type='text', name='telephone', placeholder='Telephone')
+            .form-group
+                label(for='address') Address
+                input#address.form-control(type='text', name='address', placeholder='Address')
+            .form-group
+                label(for='city') City/Town
+                input#city.form-control(type='text', name='city', placeholder='City')
+            .form-group
+                label(for='province') Province 
+                select#province.form-control(name='province')
+                        option(value='AB') Alberta
+                        option(value='BC') British Columbia
+                        option(value='MB') Manitoba
+                        option(value='NB') New Brunswick
+                        option(value='NL') Newfoundland and Labrador
+                        option(value='NS') Nova Scotia
+                        option(value='ON') Ontario
+                        option(value='PE') Prince Edward Island
+                        option(value='QC') Quebec
+                        option(value='SK') Saskatchewan
+                        option(value='NT') Northwest Territories
+                        option(value='NU') Nunavut
+                        option(value='YT') Yukon
+            .form-group
+                label(for='postal') Postal Code
+                input#postal.form-control(type='text', name='postal' , placeholder='Postal Code')
+            .from-group
+                label(for="privacyAndCookies") By clicking to Register you agree to our
+                a(href='/terms-conditions')  Terms-Conditions, 
+                label(for='andFor') and 
+                a(href='/privacy-policy')  Privacy Policy
+                label(for='dotWord') .
+            
+                
+            button.btn.btn-lg.btn-primary.btn-block(type='submit') Register

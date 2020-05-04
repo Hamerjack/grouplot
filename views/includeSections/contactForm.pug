@@ -1,0 +1,43 @@
+mixin contactForm()
+    h2.p-spacer Contact Us
+    hr.clearfix.w-100
+    form.p-spacer#contact-form(method='post', action='/', role='form')
+        .messages
+        .controls
+            .row
+                .col-md-6
+                    .form-group
+                        label(for='form_name') Firstname *
+                        input#form_name.form-control(type='text', name='name', placeholder='Please enter your firstname *', required='required', data-error='Firstname is required.')
+                        .help-block.with-errors
+                .col-md-6
+                    .form-group
+                        label(for='form_lastname') Lastname *
+                        input#form_lastname.form-control(type='text', name='surname', placeholder='Please enter your lastname *', required='required', data-error='Lastname is required.')
+                        .help-block.with-errors
+            .row
+                .col-md-6
+                    .form-group
+                        label(for='form_email') Email *
+                        input#form_email.form-control(type='email', name='email', placeholder='Please enter your email *', required='required', data-error='Valid email is required.')
+                        .help-block.with-errors
+                .col-md-6
+                    .form-group
+                        label(for='form_need') Please specify your need *
+                        select#form_need.form-control(name='need', required='required', data-error='Please specify your need.')
+                            option(value='')
+                            option(value='Registration - Changes') Registration - Changes
+                            option(value='Lucky Numbers') Lucky Numbers
+                            option(value='Payment') Payment
+                            option(value='Ticket Issues') Ticket Issues
+                            option(value='Suggestions') Suggestions
+                            option(value='Other') Other
+                        .help-block.with-errors
+            .row
+                .col-md-12
+                    .form-group
+                        label(for='form_message') Message *
+                        textarea#form_message.form-control(name='message', placeholder='Message for me *', rows='4', required='required', data-error='Please, leave us a message.')
+                        .help-block.with-errors
+                .col-md-12
+                    input.btn.btn-success.btn-send(type='submit', value='Send message')

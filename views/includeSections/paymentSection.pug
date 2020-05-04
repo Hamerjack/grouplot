@@ -1,0 +1,15 @@
+.card
+    .card-header.text-center
+        | Payment
+    .card-body
+    form#form1(method="post" action="/review")
+        label(for='relativeName') Relative Name
+        input#relativeName.form-control(type='text', name='relativeName', placeholder='relativeName')        
+        #lottomax
+        #lotteryTotal
+        h5.card-title Payment:
+        ul
+            li Interact E-Transfer
+            li Cash
+        //- b NOTE: For Cash paymentt you only will be part of group if you send us payment receipt, which will be given it you at the time of payment.
+        b Cash: You must pay only to the captain in person and receive a receipt signed by you and the captain, this receipt is needed to collect any winning.

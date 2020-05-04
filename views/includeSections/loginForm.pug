@@ -1,0 +1,27 @@
+.card
+    .card-header.text-center
+        | User Login
+    .card-body
+        form(method='post')
+            .form-group
+                label(for='email') Email address
+                input#email.form-control(type='email', name='email', placeholder='Email')
+            .form-group
+                label(for='password') Password
+                input#password.form-control(type='password', name='password', placeholder='Password')
+            .form-group
+                label(for='relative') Relative 
+                select#relative.form-control(name='relative')
+                        option(value='0') --Select--
+                        option(value='1') Self
+                        option(value='2') Spouse
+                        option(value='3') Father
+                        option(value='4') Mother
+                        option(value='5') Brother
+                        option(value='6') Sister
+                label(for='privacyAndCookies') By clicking to Register you agree to our
+                a(href='/terms-conditions')  Terms-Conditions, 
+                label(for='andFor') and 
+                a(href='/privacy-policy')  Privacy Policy
+                label(for='dotWord') .  
+            button.btn.btn-lg.btn-primary.btn-block(type='submit') Log In

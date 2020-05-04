@@ -1,0 +1,20 @@
+
+//- button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalCenter')
+//-     | Launch demo modal
+mixin model()
+    #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLongTitle.modal-title Terms and Conditions
+                    //- button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        //- span(aria-hidden='true') ×
+
+                .modal-body
+                    p Please find below the concise terms and conditions:
+                    p Kindly confirm by clicking the 'I Accept' button to enter the LPGL group. By confirming your acceptance you are agreeing to our <a href='terms-conditions'>Terms-Conditions</a> of Use, our <a href='/privacy-policy'>Privacy Policy</a> and the rules contained in <a href='/faq'>Frequently Asked Questions</a> and any and all other terms, conditions, rules, regulations and policies as amended from time to time, as posted on our website. Acceptance of the above terms are mandatory to enter the LPGL Group, hosted by www.LPGL.com.
+                    p Best regards,
+                    //- | ... This is where Content comes
+                .modal-footer
+                    //- button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                    a.btn(type='button' href="/play")  I Accept 

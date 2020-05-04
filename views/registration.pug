@@ -1,0 +1,13 @@
+extends layout
+
+include ./navbar.pug
+
+block navbar
+    +navbar("Registration")
+block content
+        .container
+            .row.p-spacer
+                .col-lg-3
+                .col-lg-6.col-md-8.col-sm-8.p-spacer
+                    div(style="display:block;box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.6)")
+                        include includeSections/registrationForm.pug

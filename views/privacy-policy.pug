@@ -1,0 +1,42 @@
+extends layout
+
+include ./navbar.pug
+
+block navbar
+    +navbar()
+block content
+    .container
+        h1.p-spacer= title
+        hr.clearfix.w-100
+        p
+            a(href='#') LPGL</a> is a website that is registered in Waterloo, Ontario, Canada. By using the website and accessing its services, you agree to the terms contained in this privacy policy here under:
+        ul 
+            li For use and access of this website and its services, we may require information from you, including but not limited to your name, address, contact details, financial information, and proof of identification. We agree only to the required information necessary for providing our services to you.
+            li We may store and use the information collected from you. Your use of this website constitutes your consent to such use and storage of your personal information by us.
+            li We agree that we shall not use the information provided by you for any illegitimate purpose. We also agree to store the collected information, complying with security practices as prevalent in the industry.
+            li We agree that upon your written request, we shall erase, destroy, or modify the information provided by you. However, if we are not in receipt of any and/or all information required from you for providing our services to you, you agree that we are discharged from performing any such obligations.
+            li You agree that the Company or its personnel are not liable for all claims or losses arising from any dispute pertaining to such data, including disputes with third parties.
+            li We comply with all applicable laws pertaining to collection, storage, and use of your personal information. Your consent to this privacy policy is informed, specific, and freely given.
+block foot
+    footer.bg-dark.text-white.footer-class
+        .container
+            .footer-copyright.text-center.py-3
+                | © 2019 Copyright:
+                a(href='#!')  LPGL.com
+                a(href='/terms-conditions') |  Terms And Conditions 
+                a(href='/privacy-policy') |  Privacy Policy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+extends layout
+
+include ./navbar.pug
+include ./includeSections/contactForm.pug
+include ./includeSections/lotteryList.pug
+
+block navbar
+    +navbar("Home")
+//- block heroimage
+//-     .container-fluid
+//-         img.responsive.homePageImage(src="../assets/images/homePage.jpg", alt="Peace")
+//-     .heroimage
+        
+        //- .container
+        //-     .row
+        //-         .jumbotron.text-white.bg-dark.heroCard.col-lg-7.col-sm-12.offset-lg-5.p-spacer
+        //-             h1.display-4 Play Together Win BIG Together
+        //-             p.lead
+        //-                 | Joining Hands And Playing Together Increases Our Chances To WIN BIG.
+        //-             a.btn.btn-primary.btn-lg.float-right(href='/lotteries', role='button') Lets Play
+block content
+    img.responsive.homePageImage(src="../assets/images/homePage.jpg", alt="Peace")
+    //- .container-fluid
+    //-     .row.p-spacer
+    //-         //- h2 Section 2
+    //-         //- hr.clearfix.w-100
+    //-         div.mr-auto.col-sm-4.offset-sm-4 
+    //-             h2.text-center TESTIMONIALS
+    //-             hr.clearfix.w-100
+    //-     //- .row.p-spacer
+    //-     //- div.mr-auto
+    //-     .row.p-spacer   
+    //-         div.mr-auto.col-sm-12
+    //-             p.text-center "I work hard for my money that’s why it needs to be in the most trustworthy hands. The right opportunity to win the lottery came when I heard about playing as a group lottery! The comfort level I felt as I played to win was established ongoing through the Captain and the group members for past 6 years i have played with this group It is incredibly effortless and convenient to play rather than going into stores and wasting my precious time. Thank you lets play lottery for helping me with a better life!" 
+    //-         div.mr-auto.col-sm-12 
+    //-             p.text-right.font-weight-bold -Rob Patel
+                
+    //-     .row.p-spacer   
+    //-         div.mr-auto.col-sm-12
+    //-             p.text-center "As a woman, I have always shied away from playing lotteries because of my cultural norms and belief. I never knew my norms were the ones holding me away from living the life of my dream. I did play with few friends at work but it was frustrating to see people pay every week I been playing with lets play lottery group for 4 years, what goods features that they have is You pay for the whole 56 draws or you pay complete up front for the lottery at the beginning You get proper accounts emailed to you by the captain,list of members in the group You don't have to drive to the stores every week You have more changes to win as a group The captain takes pride in his work and i wish letsplay lottery group all the best"
+    //-         div.mr-auto.col-sm-12 
+    //-             p.text-right.font-weight-bold -Rebecca Beth      
+            //- +model()
+    .container
+        #myCarousel.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#myCarousel' data-slide-to='0')
+                li(data-target='#myCarousel' data-slide-to='1')
+                li(data-target='#myCarousel' data-slide-to='2')
+                 li(data-target='#myCarousel' data-slide-to='3')
+            //- container
+            .row
+                .col-md-8.col-center.m-auto.pt-4.my-md-5
+                    h2.text-center Testimonials
+            .carousel-inner
+                .carousel-item.active
+                    img.first-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' alt='First slide')
+                    //- .container
+                    .carousel-caption
+                        .img-box
+                            img(src='../assets/images/testimonial/2.jpg' alt='')
+                        p
+                            | I did play with few friends at work but it was frustrating to see people pay every week, I been playing with lets play lottery group for 4 years, what goods features that they have is you pay for the whole 56 draws or you pay complete up front  for the lottery at the beginning you get proper accounts emailed to you by the captain you don't have to drive to the  stores every week you have more changes to win as a group The captain takes pride in his work.
+                        p
+                            | - Tammy
+                .carousel-item
+                    img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' alt='Second slide')
+                    //- .container
+                    .carousel-caption
+                        .img-box
+                            img(src='../assets/images/testimonial/3.jpg' alt='')
+                        p
+                            | It is incredibly and effortless and convenient to play as a group the advance play for 52 weeks than drive to the stores every week But when i was introduce to letsplay grouplottery.com I jumped to chances of winning big as a group Thanks to the captain we have proper terms and condition and how winnings will be distributed and also given back to charity and shared with organisation that need help research for a cure.
+                        p
+                            | - Russel Braco
+                .carousel-item
+                    img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' alt='Third slide')
+                    //- .container
+                    .carousel-caption
+                        .img-box
+                            img(src='../assets/images/testimonial/5.jpg' alt='')
+                        p
+                            | I work hard for my money that’s why it needs to be in the most trustworthy hands. The right opportunity to win the lottery came when I heard about playing as a group lottery! The comfort level I felt as I played to win was established ongoing through the Captain and the group members for past 6 years i have played with this group It is incredibly effortless and convenient to play rather than going into stores and wasting my precious time. Thank you lets play lottery for helping me with a better life!
+                        p
+                            | - Rob Patel
+                .carousel-item
+                    img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' alt='Third slide')
+                    //- .container
+                    .carousel-caption
+                        .img-box
+                            img(src='../assets/images/testimonial/1.jpg' alt='')
+                        p
+                            | As a woman, I have always shied away from playing lotteries because of my cultural norms and belief. I never knew my norms were the ones holding me away from living the life of my dream. I did play with few friends at work but it was frustrating to see people pay every week, what goods features that they have is You pay for the whole 56 draws or you pay complete up front for the lottery at the beginning You get proper accounts emailed to you by the captain,list of members in the group You don't have to drive to the stores.
+                        p
+                            | - Rebecca Beth
+            a.carousel-control-prev(href='#myCarousel' role='button' data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+            a.carousel-control-next(href='#myCarousel' role='button' data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+
+    
+    //- .container-fluid.bg-light
+    //-     .container
+    //-         +contactForm()
